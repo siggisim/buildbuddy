@@ -58,8 +58,8 @@ jobs:
         github_token: ${{ secrets.BUILDBUDDY_GITHUB_USER_TOKEN }}
         branch: master
 
-    - name: Sleep for 2 minute
-      run: sleep 120s
+    - name: Sleep for 1 minute
+      run: sleep 60s
       shell: bash
 
     - name: Bump Enterprise Version
@@ -86,6 +86,7 @@ jobs:
         git add charts/buildbuddy-enterprise/Chart.yaml
         git add charts/buildbuddy-enterprise/README.md
         git add charts/buildbuddy-enterprise/values.yaml
+        git add charts/buildbuddy-enterprise/charts/*
 
         git commit -m "Bumping Enterprise to ${{ github.event.release.tag_name }}" -a
 
