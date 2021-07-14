@@ -36,7 +36,7 @@ jobs:
 
     - name: Commit
       run: |
-        cd ../buildbuddy-internal
+        cd ../buildbuddy-helm
         git config --local user.email "releasebot@buildbuddy.io"
         git config --local user.name "BuildBuddy Release Bot"
 
@@ -79,7 +79,7 @@ jobs:
 
     - name: Commit
       run: |
-        cd ../buildbuddy-internal
+        cd ../buildbuddy-helm
         git config --local user.email "releasebot@buildbuddy.io"
         git config --local user.name "BuildBuddy Release Bot"
 
