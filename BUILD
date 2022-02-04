@@ -19,7 +19,11 @@ nogo(
         "@org_golang_x_tools//go/analysis/passes/composite:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/copylock:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/deepequalerrors:go_tool_library",
-        "@org_golang_x_tools//go/analysis/passes/errorsas:go_tool_library",
+        "@org_golang_x_tools//go/analy
+        
+        sis/passes/errorsas:go_tool_library",
+
+        
         "@org_golang_x_tools//go/analysis/passes/fieldalignment:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/framepointer:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/httpresponse:go_tool_library",
