@@ -9,15 +9,23 @@ nogo(
     vet = True,
     visibility = ["//visibility:public"],
     deps = [
+
+        
         "@org_golang_x_tools//go/analysis/passes/asmdecl:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/assign:go_tool_library",
-        # "@org_golang_x_tools//go/analysis/passes/atomic:go_tool_library",
+        # "@org_golang_x_
+        
+        
+        tools//go/analysis/passes/atomic:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/atomicalign:go_tool_library",
         # "@org_golang_x_tools//go/analysis/passes/bools:go_tool_library",
         # "@org_golang_x_tools//go/analysis/passes/buildtag:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/cgocall:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/composite:go_tool_library",
-        "@org_golang_x_tools//go/analysis/passes/copylock:go_tool_library",
+        "@org_golang_x_too
+        
+        
+        ls//go/analysis/passes/copylock:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/deepequalerrors:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/errorsas:go_tool_library",
         "@org_golang_x_tools//go/analysis/passes/fieldalignment:go_tool_library",
