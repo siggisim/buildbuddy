@@ -128,7 +128,7 @@ genrule(
     name = "setup_ci",
     outs = ["setup_ci.sh"],
     executable = True,
-    cmd_bash = "# hello > $@",
+    cmd_bash = "touch $@",
 )
 
 # Certs that are distributed with the server binary.
