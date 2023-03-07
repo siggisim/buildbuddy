@@ -127,7 +127,7 @@ config_setting(
 genrule(
     name = "setup_ci",
     outs = ["setup_ci.sh"],
-    exeuctable = True,
+    executable = True,
     cmd_bash = "# hello > $@",
 )
 
