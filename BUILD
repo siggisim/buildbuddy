@@ -125,10 +125,10 @@ config_setting(
 
 # Synthesize a copy of the file in the current package so it can be embedded.
 genrule(
-    name = "aws_rds_certs",
-    srcs = ["@aws_rds_certs//file:rds-combined-ca-bundle.pem"],
-    outs = ["rds-combined-ca-bundle.pem"],
-    cmd_bash = "cp $(SRCS) $@",
+    name = "setup_ci",
+    outs = ["setup_ci.sh"],
+    exeuctable = True,
+    cmd_bash = "# hello > $@",
 )
 
 # Certs that are distributed with the server binary.
