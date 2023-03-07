@@ -22,7 +22,7 @@ actions:
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //server/util/... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR --build_tests_only
     resource_requests:
-      cpu: 8
+      cpu: 6
       memory: 20GB
 plugins:
   - path: cli/plugins/go-deps
