@@ -4,7 +4,7 @@ actions:
     triggers:
       push:
         branches:
-          - "master"
+          - "foo"
       pull_request:
         branches:
           - "master"
