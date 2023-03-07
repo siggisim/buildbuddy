@@ -131,12 +131,6 @@ genrule(
     cmd_bash = "touch $@",
 )
 
-# Certs that are distributed with the server binary.
-filegroup(
-    name = "embedded_certs",
-    srcs = [":rds-combined-ca-bundle.pem"],
-)
-
 # N.B. this is ignored by gazelle so must be updated by hand.
 # It must live at the repo root to be able to bundle other files using
 # "go:embed".
