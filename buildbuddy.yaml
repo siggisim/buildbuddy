@@ -10,8 +10,8 @@ actions:
           - "master"
     bazel_commands:
       - run //:setup_ci --config=workflows
-      - --bazelrc=custom.bazelrc build //... --config=workflows --test_tag_filters=-performance,-webdriver,-docker
-      - --bazelrc=custom.bazelrc test //... --config=workflows --test_tag_filters=-performance,-webdriver,-docker
+      - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
+      - --bazelrc=custom.bazelrc test //... --config=workflows --build_tag_filters=-no-bazelci --build_tests_only --repo_env=FOO=BAR
 
 plugins:
   - path: cli/plugins/go-deps
