@@ -9,16 +9,16 @@ actions:
         branches:
           - "master"
     bazel_commands:
-      - run //:setup_ci --config=workflows
+      - run //:setup_ci --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //server/util/... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR --build_tests_only
-      - run //:setup_ci --config=workflows
+      - run //:setup_ci --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //server/util/... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR --build_tests_only
-      - run //:setup_ci --config=workflows
+      - run //:setup_ci --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //server/util/... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR --build_tests_only
-      - run //:setup_ci --config=workflows
+      - run //:setup_ci --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //server/util/... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR --build_tests_only
       
