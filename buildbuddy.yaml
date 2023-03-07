@@ -11,6 +11,10 @@ actions:
     bazel_commands:
       - run //:setup_ci --config=workflows
       - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
+      - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
+      - --bazelrc=custom.bazelrc build //... --config=workflows --build_tag_filters=-no-bazelci --repo_env=FOO=BAR
+      - --bazelrc=custom.bazelrc test //... --config=workflows --build_tag_filters=-no-bazelci --build_tests_only --repo_env=FOO=BAR
+      - --bazelrc=custom.bazelrc test //... --config=workflows --build_tag_filters=-no-bazelci --build_tests_only --repo_env=FOO=BAR
       - --bazelrc=custom.bazelrc test //... --config=workflows --build_tag_filters=-no-bazelci --build_tests_only --repo_env=FOO=BAR
 
 plugins:
